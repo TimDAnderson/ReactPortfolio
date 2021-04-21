@@ -4,6 +4,8 @@
   "description": "portfolio for Tim D. Anderson",
   "main": "index.js",
   "scripts": {
+    "start": "node server/index.js",
+    "start-dev": "nodemon server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,9 +19,25 @@
   },
   "homepage": "https://github.com/TimDAnderson/portfolio#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "aws-sdk": "^2.835.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7"
   },
   "devDependencies": {
-    "grunt": "^1.3.0"
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "core-js": "^3.10.2",
+    "grunt": "^1.3.0",
+    "grunt-aws-s3": "^2.0.2",
+    "grunt-browserify": "^6.0.0",
+    "grunt-contrib-uglify": "^5.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "reactify": "^1.1.1",
+    "time-grunt": "^2.0.0"
   }
 }
