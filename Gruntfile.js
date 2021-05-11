@@ -17,7 +17,7 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: 'public/',
-            src: [ 'portfolioBundle.js' ],
+            src: [ 'portfolioBundle.js', 'portfolioStyle.css' ],
             dest: '/'
           }
         ]

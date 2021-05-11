@@ -13,17 +13,29 @@ const AppContainer = styled.div`
 const LeftColumn = styled.div`
   height: 100%;
   width: 180px;
-  background-color: #ff0000;
+  background-color: #222831;
   padding-left: 20px;
+  color: #fff;
+  opacity: 0.9;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: 5px solid black;
 `;
 
 const DisplayArea = styled.div`
   flex: 1;
-  background-color: #00FF00;
+  background-color: #30475e;
+  color: #fff;
 `;
 
 const PageOption = styled.div`
   cursor: pointer;
+`;
+
+const ContactContainer = styled.div`
+position: absolute;
+    bottom: 0;
+  padding-bottom: 15px;
+
 `;
 
 const Header = styled.div`
@@ -35,6 +47,17 @@ const Header = styled.div`
   margin-inline-end: 0px;
   font-weight: bold;
   cursor: pointer;
+`;
+
+const WhiteA = styled.a`
+color: #fff;
+font-size:small;
+font-family: Arial, Helvetica, sans-serif;
+padding-left: 5px;
+`
+
+const ContactSpacer = styled.div`
+  padding-top: 10px;
 `;
 
 const { useState } = React
@@ -50,17 +73,34 @@ const App = props => {
         <br></br>
         <PageOption onClick={() => setPage(1)}>About Me </PageOption>
         <br></br>
-        <PageOption onClick={() => setPage(2)}>Projects</PageOption>
+        <PageOption onClick={() => setPage(2)}>This Portfolio</PageOption>
         <br></br>
-        <PageOption onClick={() => setPage(3)}>This Site</PageOption>
+        <PageOption onClick={() => setPage(3)}>Current Projects</PageOption>
         <br></br>
-        <PageOption onClick={() => setPage(4)}>Contact Me</PageOption>
+        <ContactContainer>
+          <ContactSpacer>
+            <i className="fab fa-github"></i>
+            <WhiteA href="https://github.com/TimDAnderson">TimDAnderson</WhiteA>
+          </ContactSpacer>
+          <ContactSpacer>
+            <i className="fab fa-linkedin"></i>
+            <WhiteA href="https://www.linkedin.com/in/tim-anderson-5bb85452/">LinkedIn</WhiteA>
+          </ContactSpacer>
+          <ContactSpacer>
+            <i className="fas fa-envelope"></i>
+            <WhiteA href="mailto:me@timdanderson.com">me@TimDAnderson.com</WhiteA>
+          </ContactSpacer>
+          <ContactSpacer>
+            <i className="fas fa-phone"></i>
+            <WhiteA>+1 (925) 348 5133</WhiteA>
+          </ContactSpacer>
+        </ContactContainer>
       </LeftColumn>
       <DisplayArea className="displayPage">
         {page === 0 ? <Home /> : null}
         {page === 1 ? <About /> : null}
-        {page === 2 ? <Projects /> : null}
-        {page === 3 ? <SiteInfo /> : null}
+        {page === 2 ? <SiteInfo /> : null}
+        {page === 3 ? <Projects /> : null}
         {page === 4 ? <ContactMe /> : null}
       </DisplayArea>
     </AppContainer>
