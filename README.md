@@ -1,2 +1,3 @@
-# portfolio
-public website for TimDAnderson
+# React Portfolio
+## Public portfolio for Tim Anderson
+TimDAnderson.com
