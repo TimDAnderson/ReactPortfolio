@@ -19,10 +19,10 @@ export const Home = props => {
         </PicContainer>
         <br></br>
         <NameDiv>Tim Andeson</NameDiv>
-        <MyTitle>Full Stack Developer</MyTitle>
+        <MyTitle>Software Engineer</MyTitle>
         <br></br>
         <Description>
-          Hello and welcome to my portfolio built with React.  I'm a full stack developer with 
+          Hello and welcome to my portfolio built with React.  I'm a software engineer with 
           a passion for creating and connecting complex applications.  I have a B.S. in engineering
           and am currently working in the video industry.  Professionally I've traveled the world and 
           created custom applications for many Research and Development / Engineering groups.  I've also 
