@@ -8,7 +8,7 @@ import {
   MyTitle,
 } from './home.styles.jsx'
 
-export const Home = props => {
+export const Home = () => {
 
   return (
     <HomeContainer className="homeContainer">

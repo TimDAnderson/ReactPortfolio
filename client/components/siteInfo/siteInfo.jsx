@@ -7,7 +7,7 @@ import {
   DiagramContainer,
 } from './siteInfo.styles.jsx'
 
-export const SiteInfo = props => {
+export const SiteInfo = () => {
 
   return (
     <SiteInfoContainer>
@@ -21,11 +21,9 @@ export const SiteInfo = props => {
       <ImgContainer>
         <img height="180" width="375" src="https://gifbucket.s3-us-west-1.amazonaws.com/S2e8_IC2_Game_Show.png" />
       </ImgContainer>
-
       <HowDid>
         How <strong>did</strong> you get here? 
       </HowDid>
-
       <BigFan>
         I am a big fan of documentation and web sequence diagrams, below is the architecture of this portfolio.
       </BigFan>
