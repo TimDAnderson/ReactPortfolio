@@ -46,6 +46,6 @@ export const PicContainer = styled.div`
 
 export const MyTitle = styled.div`
 font-family: Arial, Helvetica, sans-serif;
-padding-left: 27px;
+padding-left: 33px;
 margin-left: 160px;
 `;
