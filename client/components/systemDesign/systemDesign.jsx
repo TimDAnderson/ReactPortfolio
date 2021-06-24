@@ -23,9 +23,9 @@ export const SystemDesign = () => {
       <br></br>
       <TxtContainer>
         Below is an example of a service that I scaled out for production.  I inherited 
-        a code base that was a working prototype for a about / description service.  It included
-        a prototype db and working tests.  I migraded the database over to a cluster of Cassandra nodes,
-        implemented Server Side Rendering and built from there.  Using a variety of scaling techniques including load balancing and cacheing 
+        a code base that was a working prototype for an About / Description service.  It included
+        a prototype DB and working tests.  I migraded the database over to a cluster of Cassandra nodes,
+        implemented Server Side Rendering and built from there.  Using a variety of scaling techniques, including load balancing and cacheing, 
         I was able to accomodate high throughput with low latency.  Blow is a diagram of the architecture.  
         Links to the repos are available on the current projects page.
       </TxtContainer>

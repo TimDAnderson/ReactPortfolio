@@ -12,9 +12,9 @@ export const SiteInfo = () => {
   return (
     <SiteInfoContainer>
       <TxtContainer>
-        This is a React application using a React Router for page managment and styled components for modular styling.  The client code is autotatically bundled,  compressed
+        This is a React application using a React Router for page management and styled components for modular styling.  The client code is automatically bundled,  compressed
         and deployed to an AWS S3 bucket using Grunt.  The server was created with Express and has been deployed with Docker to an AWS 
-        EC2 insance.  Finally, https is possible because of a Nginx reverse proxy and the Lets Encrypt SSL certificate
+        EC2 instance.  Finally, https is possible because of a Nginx reverse proxy and the Lets Encrypt SSL certificate
         generator.
       </TxtContainer>
       <br></br>
