@@ -20,7 +20,7 @@ const Route = ReactRouterDOM.Route;
 const Switch = ReactRouterDOM.Switch;
 const Router = ReactRouterDOM.BrowserRouter;
 
-export const App = props => {
+export const App = () => {
 
   return (
     <Router>
@@ -30,14 +30,15 @@ export const App = props => {
           <LinkStyle to="/" >Home</LinkStyle>
           <br></br>
           <br></br>
+          <LinkStyle to="/ThisPortfolio">This Portfolio</LinkStyle>
+          <br></br>
+          <br></br>
           <LinkStyle to="/ServiceOrientedArchitecture">Service Oriented Architecture</LinkStyle>
           <br></br>
           <br></br>
           <LinkStyle to="/SystemDesign">System Design</LinkStyle>
           <br></br>
-          <br></br>
-          <LinkStyle to="/ThisPortfolio">This Portfolio</LinkStyle>
-          <br></br>
+
           <br></br>
           <LinkStyle to="/CurrentProjects">Current Projects</LinkStyle>
           <br></br>

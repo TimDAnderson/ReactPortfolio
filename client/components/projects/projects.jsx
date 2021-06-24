@@ -1,61 +1,20 @@
-const ProjectContainer = styled.div`
-  padding-left: 10%;
-  padding-top: 0px;
-`;
+import {
+  ProjectContainer,
+  WhiteATag,
+  Project,
+  ProjectTitle,
+  ProjectInfo1,
+  ProjectInfo1Img,
+  ProjectInfo2,
+  ProjectInfo2Img,
+  ProjectWide,
+  TitleText,
+} from './projects.styles.jsx'
 
-const WhiteATag = styled.a`
-color: #fff;
-font-size:small;
-font-family: Arial, Helvetica, sans-serif;
-`
-
-const Project = styled.div`
-  width: 1150px;
-  background-color: #222831;
-  border-radius: 25px;
-  padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  opacity: 0.8;
-  margin-bottom: 15px;
-  display: grid;
-  grid-template-columns: 350px 400px 400px;
-`;
-
-const ProjectTitle = styled.div`
-  grid-column-start: 1;
-`;
-
-const ProjectInfo1 = styled.div`
-  grid-column-start: 2;
-`;
-
-const ProjectInfo1Img = styled.div`
-  grid-column-start: 2;
-  padding-left: 100px;
-`;
-
-const ProjectInfo2 = styled.div`
-  grid-column-start: 3;
-`;
-
-const ProjectInfo2Img = styled.div`
-  grid-column-start: 3;
-  padding-left: 100px;
-`;
-
-const ProjectWide = styled.div`
-  grid-column-end: span 2;
-`;
-
-const TitleText = styled.div`
-  font-size: 150%;
-`;
-
-export const Projects = props => {
+export const Projects = () => {
 
   return (
     <ProjectContainer>
-      {/* <h1>Current Projects</h1> */}
       <Project>
         <ProjectTitle>
           <TitleText>System Design</TitleText>
@@ -72,14 +31,6 @@ export const Projects = props => {
             <li>Redis cache for quick retrieval of previously rendered HTML</li>
             <li>Cassandra DB Cluster for data replication and speed</li>
           </ul>  
-          {/* <div>
-            Deployed proxy server and About service with 10 million records to AWS
-            Google PageSpeed insight score of 99
-            Server Side Rendering with React
-            Horizontal Scaling with load balancers
-            Redis cache for quick retrieval of previously rendered HTML
-            Cassandra DB Cluster for data replication and speed
-          </div> */}
         </ProjectInfo1>
         <ProjectInfo2Img>
         <img height="150" width="150" src="https://gifbucket.s3.us-west-1.amazonaws.com/Screen+Shot+2021-06-21+at+11.42.21+PM.png" />
