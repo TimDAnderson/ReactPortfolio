@@ -21,6 +21,7 @@ export const DisplayArea = styled.div`
   flex: 1;
   background-color: #30475e;
   color: #fff;
+  overflow: auto;
 `;
 
 // export const PageOption = styled.div`

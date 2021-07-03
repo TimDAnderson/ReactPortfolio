@@ -11,7 +11,9 @@ export const SystemDesign = () => {
   return (
     <SystemContainer>
       <SystemTitle>
+        <h2>
         Scaling: An iterative and measurable process
+        </h2>
       </SystemTitle>
       <br></br>
       <TxtContainer>
@@ -22,12 +24,24 @@ export const SystemDesign = () => {
       </TxtContainer>
       <br></br>
       <TxtContainer>
-        Below is an example of a service that I scaled out for production.  I inherited 
+        {/* Below is an example of a service that I scaled out for production.  I inherited 
         a code base that was a working prototype for an About / Description service.  It included
         a prototype DB and working tests.  I migraded the database over to a cluster of Cassandra nodes,
         implemented Server Side Rendering and built from there.  Using a variety of scaling techniques, including load balancing and caching, 
         I was able to accomodate high throughput with low latency.  Blow is a diagram of the architecture.  
-        Links to the repos are available on the current projects page.
+        Links to the repos are available on the current projects page. */}
+        <ul>
+            <li>Below is an example of a service that I scaled out for production.</li>
+            <li>I inherited a code base that was a working prototype for an About / Description service.</li>
+            <li>It included
+        a prototype DB (Mongo) and working tests.</li>
+            <li>I migraded the database over to a cluster of Cassandra nodes,
+        implemented Server Side Rendering and built from there.</li>
+            <li>Using a variety of scaling techniques, including load balancing and caching, 
+        I was able to accomodate high throughput with low latency.</li>
+            <li>Blow is a diagram of the architecture.  
+        Links to the repos are available on the current projects page.</li>
+          </ul>  
       </TxtContainer>
       <br></br>
       <DiagramContainer>

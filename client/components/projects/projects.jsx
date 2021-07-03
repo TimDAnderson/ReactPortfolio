@@ -9,12 +9,14 @@ import {
   ProjectInfo2Img,
   ProjectWide,
   TitleText,
+  Title,
 } from './projects.styles.jsx'
 
 export const Projects = () => {
 
   return (
     <ProjectContainer>
+      <Title><h2>Scroll down to see current projects</h2></Title>
       <Project>
         <ProjectTitle>
           <TitleText>System Design</TitleText>

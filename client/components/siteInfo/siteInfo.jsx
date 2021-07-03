@@ -12,14 +12,17 @@ export const SiteInfo = () => {
   return (
     <SiteInfoContainer>
       <TxtContainer>
-        This is a React application using a React Router for page management and styled components for modular styling.  The client code is automatically bundled,  compressed
-        and deployed to an AWS S3 bucket using Grunt.  The server was created with Express and has been deployed with Docker to an AWS 
-        EC2 instance.  Finally, https is possible because of a Nginx reverse proxy and the Lets Encrypt SSL certificate
-        generator.
+        <ul>
+            <li>This is a single page React application using styled components for modular styling.</li>
+            <li>The client code is automatically bundled, compressed and deployed to an AWS S3 bucket using Grunt.</li>
+            <li>The server was created with Express and has been deployed with Docker to an AWS EC2 instance.</li>
+            <li>HTTPS is possible because of a Nginx reverse proxy and the Lets Encrypt SSL certificate
+        generator.</li>
+          </ul>
       </TxtContainer>
       <br></br>
       <ImgContainer>
-        <img height="180" width="375" src="https://gifbucket.s3-us-west-1.amazonaws.com/S2e8_IC2_Game_Show.png" />
+        <img height="280" width="475" src="https://gifbucket.s3-us-west-1.amazonaws.com/S2e8_IC2_Game_Show.png" />
       </ImgContainer>
       <HowDid>
         How <strong>did</strong> you get here? 
@@ -29,7 +32,7 @@ export const SiteInfo = () => {
       </BigFan>
       <br></br>
       <DiagramContainer>
-        <img height="490" width="660" src="https://gifbucket.s3-us-west-1.amazonaws.com/Tim's+Portfolio.png" />
+        <img height="590" width="760" src="https://gifbucket.s3-us-west-1.amazonaws.com/Tim's+Portfolio.png" />
       </DiagramContainer>
     </SiteInfoContainer>
   )
