@@ -1,6 +1,6 @@
 # React Portfolio
 ## Public portfolio for Tim Anderson
-TimDAnderson.com
+Please visit the deployed portfolio at TimDAnderson.com
 
 This webpage has been optomized for Desktop viewing
 
